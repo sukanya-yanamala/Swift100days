@@ -171,3 +171,75 @@ extension Collection {
 
 pythons.summarize()
 beatles.summarize()
+
+//Protocol-oriented programming
+
+protocol Identifiable1 {
+    var id: String { get set }
+    func identify()
+}
+
+extension Identifiable {
+    func identify() {
+        print("My ID is \(id).")
+    }
+}
+
+struct User1: Identifiable {
+    var id: String
+}
+
+let twostraws = User(id: "twostraws")
+twostraws.identify()
+
+//Day12
+
+//Unwrapping optionals
+var name: String? = nil
+
+name = "Sukanya"
+if let unwrapped = name {
+    print("\(unwrapped.count) letters")
+} else {
+    print("Missing name.")
+}
+
+//Unwrapping with guard
+
+func greet(_ name: String?) {
+    guard let unwrapped = name else {
+        print("You didn't provide a name!")
+        return
+    }
+
+    print("Hello, \(unwrapped)!")
+}
+
+//Force unwrapping
+
+let str = "5"
+let num3 = Int(str)
+
+let num4 = Int(str)!
+
+//Nil coalescing
+
+func username(for id: Int) -> String? {
+    if id == 1 {
+        return "Taylor Swift"
+    } else {
+        return nil
+    }
+}
+
+let user = username(for: 15) ?? "Anonymous"
+
+print(user)
+
+//Optional chaining
+
+let names = ["John", "Paul", "George", "Ringo"]
+
+let beatle = names.first?.uppercased()
+
+//
