@@ -16,36 +16,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5H-Ab-tRh">
-                                <rect key="frame" x="152" y="100" width="200" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5H-Ab-tRh">
+                                <rect key="frame" x="152" y="100" width="200" height="142"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="r5H-Ab-tRh" secondAttribute="height" multiplier="100:57" id="bSa-lb-aE0"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="uk"/>
                                 <connections>
                                     <action selector="buttontyped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wic-2m-bzp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITC-JW-6Vs">
-                                <rect key="frame" x="152" y="224" width="200" height="100"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITC-JW-6Vs">
+                                <rect key="frame" x="152" y="266" width="200" height="142.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ITC-JW-6Vs" secondAttribute="height" multiplier="100:57" id="ggW-5a-gkv"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="uk"/>
                                 <connections>
                                     <action selector="buttontapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MEJ-yx-fYU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vua-Uo-3nP">
-                                <rect key="frame" x="152" y="360" width="200" height="100"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vua-Uo-3nP">
+                                <rect key="frame" x="152" y="444.5" width="200" height="142"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="vua-Uo-3nP" secondAttribute="height" multiplier="200:127" id="aXb-W7-XFm"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="uk"/>
+                                <buttonConfiguration key="configuration" style="plain" image="uk" title=""/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="ITC-JW-6Vs" firstAttribute="height" secondItem="r5H-Ab-tRh" secondAttribute="height" id="77U-lc-2kI"/>
                             <constraint firstItem="ITC-JW-6Vs" firstAttribute="centerX" secondItem="r5H-Ab-tRh" secondAttribute="centerX" id="RBA-rx-WO4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="vua-Uo-3nP" secondAttribute="bottom" constant="20" id="Ted-Dy-22l"/>
                             <constraint firstItem="r5H-Ab-tRh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="Y9k-BC-rPi"/>
                             <constraint firstItem="r5H-Ab-tRh" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="bvA-UC-w7K"/>
                             <constraint firstItem="vua-Uo-3nP" firstAttribute="centerX" secondItem="ITC-JW-6Vs" secondAttribute="centerX" id="c4O-FH-MMt"/>
                             <constraint firstItem="vua-Uo-3nP" firstAttribute="top" secondItem="ITC-JW-6Vs" secondAttribute="bottom" constant="36" id="cqp-1k-d57"/>
+                            <constraint firstItem="ITC-JW-6Vs" firstAttribute="height" secondItem="vua-Uo-3nP" secondAttribute="height" id="geM-D5-9b7"/>
                             <constraint firstItem="ITC-JW-6Vs" firstAttribute="top" secondItem="r5H-Ab-tRh" secondAttribute="bottom" constant="24" id="n4W-O5-KYa"/>
                         </constraints>
                     </view>
