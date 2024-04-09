@@ -9,9 +9,10 @@ for city in cities {
 
 //
 
-let count = 1...5
+let count = 1...10
 for num in count {
     print("Number is \(num)")
+// print numbers
 }
 
 //while
